@@ -1,0 +1,136 @@
+/* General settings */
+html, body {
+    margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+:root {
+	--color-black: #222;
+	--color-gray: #cccccc;
+	--color-darkerGray: #9b9a9a;
+}
+
+body {
+	font-family: 'Lucida Sans', sans-serif;
+	font-size: 1em;
+}
+
+/* Header */
+#header {
+	display: flex;
+	justify-content: space-around;
+	background: var(--color-gray);
+	height: 5em;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#header-img {
+	max-width: 8em;
+}
+
+#nav-bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-list {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-list li {
+	background: var(--color-darkerGray);
+	padding: 0.5em;
+	border-radius: 0.3em;
+}
+
+.nav-list li:nth-child(2) {
+	margin: 0 1em;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: var(--color-black);
+	font-weight: 600;
+}
+
+.nav-link:hover, .nav-link:focus {
+	font-style: italic;
+}
+
+/* Main styling */
+main {
+	max-width: 35%;
+	margin: 9em auto;
+	text-align: center;
+	background: rgba(69, 126, 86, 0.562);
+	padding: 1em;
+	border-radius: 0.7em;
+}
+
+#main-heading {
+	margin: 0;
+}
+
+#description {
+	font-style: italic;
+	font-weight: 600;
+}
+
+/* Steps section */
+.steps {
+	margin: 5em auto;
+	max-width: 55%;
+	text-align-last: left;
+}
+
+hr {
+	color: var(--color-black);
+}
+
+/* Video */
+#video {
+	max-width: 20em;
+}
+
+/* Form */
+#form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#submit {
+	min-width: 30%;
+	margin: 1em;
+	padding: 0.5em 4em;
+	border-radius: 0.5em;
+	border: 0;
+	background: var(--color-gray);
+	font-weight: 600;
+	text-align: center;
+}
+
+#submit:hover, #submit:focus {
+	background: cornflowerblue;
+	font-style: italic;
+}
+
+/* Media queries */
+@media screen and ( max-width: 1200px ) {
+	.steps {
+		max-width: 65%;
+	}
+}
